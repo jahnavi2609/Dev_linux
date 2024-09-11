@@ -1,0 +1,358 @@
+[ec2-user@ip-172-31-41-29 ~]$ hostname -i
+172.31.41.29
+[ec2-user@ip-172-31-41-29 ~]$
+[ec2-user@ip-172-31-41-29 ~]$
+[ec2-user@ip-172-31-41-29 ~]$ sudo su
+[root@ip-172-31-41-29 ec2-user]#
+[root@ip-172-31-41-29 ec2-user]#
+[root@ip-172-31-41-29 ec2-user]#
+[root@ip-172-31-41-29 ec2-user]#
+[root@ip-172-31-41-29 ec2-user]#
+[root@ip-172-31-41-29 ec2-user]#
+[root@ip-172-31-41-29 ec2-user]#
+[root@ip-172-31-41-29 ec2-user]#
+[root@ip-172-31-41-29 ec2-user]#
+[root@ip-172-31-41-29 ec2-user]#
+[root@ip-172-31-41-29 ec2-user]#
+[root@ip-172-31-41-29 ec2-user]# head file1
+head: cannot open ‘file1’ for reading: No such file or directory
+[root@ip-172-31-41-29 ec2-user]#
+[root@ip-172-31-41-29 ec2-user]# ls
+Dev_linux  git_file.sh
+[root@ip-172-31-41-29 ec2-user]#
+[root@ip-172-31-41-29 ec2-user]#
+[root@ip-172-31-41-29 ec2-user]# exit
+[ec2-user@ip-172-31-41-29 ~]$
+[ec2-user@ip-172-31-41-29 ~]$
+[ec2-user@ip-172-31-41-29 ~]$ ls
+Dev_linux  git_file.sh
+[ec2-user@ip-172-31-41-29 ~]$
+[ec2-user@ip-172-31-41-29 ~]$ sudo su -
+Last login: Wed Sep 11 02:32:53 UTC 2024 on pts/1
+[root@ip-172-31-41-29 ~]#
+[root@ip-172-31-41-29 ~]#
+[root@ip-172-31-41-29 ~]# head file1
+Hii I am jahanvi
+I am using ec2-server
+
+[root@ip-172-31-41-29 ~]#
+[root@ip-172-31-41-29 ~]# host
+host         hostid       hostname     hostnamectl
+[root@ip-172-31-41-29 ~]# hostname -i
+172.31.41.29
+[root@ip-172-31-41-29 ~]#
+[root@ip-172-31-41-29 ~]#
+[root@ip-172-31-41-29 ~]#
+[root@ip-172-31-41-29 ~]# cat>>file2
+Hii i am in file2 writing using cat>>file2 command
+
+[root@ip-172-31-41-29 ~]#
+[root@ip-172-31-41-29 ~]#
+[root@ip-172-31-41-29 ~]# cat file2
+Hii i am in file2 writing using cat>>file2 command
+
+[root@ip-172-31-41-29 ~]#
+[root@ip-172-31-41-29 ~]#
+[root@ip-172-31-41-29 ~]# cat>>file3
+Hii iam in file3 writing using command>>file3 command
+[root@ip-172-31-41-29 ~]#
+[root@ip-172-31-41-29 ~]#
+[root@ip-172-31-41-29 ~]#
+[root@ip-172-31-41-29 ~]# cat>>file3
+Hii all again writing second tym in file3
+^C
+[root@ip-172-31-41-29 ~]#
+[root@ip-172-31-41-29 ~]# cat file3
+Hii iam in file3 writing using command>>file3 command
+Hii all again writing second tym in file3
+[root@ip-172-31-41-29 ~]#
+[root@ip-172-31-41-29 ~]# rm file4
+rm: remove regular empty file ‘file4’? y
+[root@ip-172-31-41-29 ~]#
+[root@ip-172-31-41-29 ~]#
+[root@ip-172-31-41-29 ~]# rm file5 -f
+[root@ip-172-31-41-29 ~]#
+[root@ip-172-31-41-29 ~]# ls
+file1  file10  file2  file3  file6  file7  file8  file9
+[root@ip-172-31-41-29 ~]#
+[root@ip-172-31-41-29 ~]#
+[root@ip-172-31-41-29 ~]# touch file{200..300}
+[root@ip-172-31-41-29 ~]#
+[root@ip-172-31-41-29 ~]# ls
+file1    file205  file213  file221  file229  file237  file245  file253  file261  file269  file277  file285  file293  file300
+file10   file206  file214  file222  file230  file238  file246  file254  file262  file270  file278  file286  file294  file6
+file2    file207  file215  file223  file231  file239  file247  file255  file263  file271  file279  file287  file295  file7
+file200  file208  file216  file224  file232  file240  file248  file256  file264  file272  file280  file288  file296  file8
+file201  file209  file217  file225  file233  file241  file249  file257  file265  file273  file281  file289  file297  file9
+file202  file210  file218  file226  file234  file242  file250  file258  file266  file274  file282  file290  file298
+file203  file211  file219  file227  file235  file243  file251  file259  file267  file275  file283  file291  file299
+file204  file212  file220  file228  file236  file244  file252  file260  file268  file276  file284  file292  file3
+[root@ip-172-31-41-29 ~]#
+[root@ip-172-31-41-29 ~]#
+[root@ip-172-31-41-29 ~]#
+[root@ip-172-31-41-29 ~]#
+[root@ip-172-31-41-29 ~]# rm 2* -f
+[root@ip-172-31-41-29 ~]#
+[root@ip-172-31-41-29 ~]# ls
+file1    file205  file213  file221  file229  file237  file245  file253  file261  file269  file277  file285  file293  file300
+file10   file206  file214  file222  file230  file238  file246  file254  file262  file270  file278  file286  file294  file6
+file2    file207  file215  file223  file231  file239  file247  file255  file263  file271  file279  file287  file295  file7
+file200  file208  file216  file224  file232  file240  file248  file256  file264  file272  file280  file288  file296  file8
+file201  file209  file217  file225  file233  file241  file249  file257  file265  file273  file281  file289  file297  file9
+file202  file210  file218  file226  file234  file242  file250  file258  file266  file274  file282  file290  file298
+file203  file211  file219  file227  file235  file243  file251  file259  file267  file275  file283  file291  file299
+file204  file212  file220  file228  file236  file244  file252  file260  file268  file276  file284  file292  file3
+[root@ip-172-31-41-29 ~]#
+[root@ip-172-31-41-29 ~]#
+[root@ip-172-31-41-29 ~]# rm file2* -f
+[root@ip-172-31-41-29 ~]#
+[root@ip-172-31-41-29 ~]# rm file2* -f
+[root@ip-172-31-41-29 ~]#
+[root@ip-172-31-41-29 ~]# ls
+file1  file10  file3  file300  file6  file7  file8  file9
+[root@ip-172-31-41-29 ~]#
+[root@ip-172-31-41-29 ~]#
+[root@ip-172-31-41-29 ~]#
+[root@ip-172-31-41-29 ~]#
+[root@ip-172-31-41-29 ~]#
+[root@ip-172-31-41-29 ~]# cp file1 file2
+[root@ip-172-31-41-29 ~]#
+[root@ip-172-31-41-29 ~]# cat file1
+Hii I am jahanvi
+I am using ec2-server
+
+[root@ip-172-31-41-29 ~]#
+[root@ip-172-31-41-29 ~]# cat file2
+Hii I am jahanvi
+I am using ec2-server
+
+[root@ip-172-31-41-29 ~]# cat file3
+Hii iam in file3 writing using command>>file3 command
+Hii all again writing second tym in file3
+[root@ip-172-31-41-29 ~]#
+[root@ip-172-31-41-29 ~]#
+[root@ip-172-31-41-29 ~]#
+[root@ip-172-31-41-29 ~]# cp file2 file3
+cp: overwrite ‘file3’? y
+[root@ip-172-31-41-29 ~]#
+[root@ip-172-31-41-29 ~]# cat file2
+Hii I am jahanvi
+I am using ec2-server
+
+[root@ip-172-31-41-29 ~]#
+[root@ip-172-31-41-29 ~]# cat file3
+Hii I am jahanvi
+I am using ec2-server
+
+[root@ip-172-31-41-29 ~]# cp file3 file100
+[root@ip-172-31-41-29 ~]#
+[root@ip-172-31-41-29 ~]# ls
+file1  file10  file100  file2  file3  file300  file6  file7  file8  file9
+[root@ip-172-31-41-29 ~]#
+[root@ip-172-31-41-29 ~]# cat file100
+Hii I am jahanvi
+I am using ec2-server
+
+[root@ip-172-31-41-29 ~]# cat file3
+Hii I am jahanvi
+I am using ec2-server
+
+[root@ip-172-31-41-29 ~]#
+[root@ip-172-31-41-29 ~]# #without erasing the content
+[root@ip-172-31-41-29 ~]#
+[root@ip-172-31-41-29 ~]# cat>>file20
+Hi this is file20
+[root@ip-172-31-41-29 ~]#
+[root@ip-172-31-41-29 ~]# cat file20
+Hi this is file20
+[root@ip-172-31-41-29 ~]#
+[root@ip-172-31-41-29 ~]# cat file20 >> file1
+[root@ip-172-31-41-29 ~]#
+[root@ip-172-31-41-29 ~]# cat file1
+Hii I am jahanvi
+I am using ec2-server
+
+Hi this is file20
+[root@ip-172-31-41-29 ~]# cat file20
+Hi this is file20
+[root@ip-172-31-41-29 ~]#
+[root@ip-172-31-41-29 ~]# cat>>numbers_file
+2
+3
+4
+5
+6
+7
+7
+8
+9
+10
+1
+100
+23
+25
+24
+26
+27
+28
+29
+30
+
+[root@ip-172-31-41-29 ~]#
+[root@ip-172-31-41-29 ~]#
+[root@ip-172-31-41-29 ~]# more numbers_file
+2
+3
+4
+5
+6
+7
+7
+8
+9
+10
+1
+100
+23
+25
+24
+26
+27
+28
+29
+30
+
+[root@ip-172-31-41-29 ~]# head file1
+Hii I am jahanvi
+I am using ec2-server
+
+Hi this is file20
+[root@ip-172-31-41-29 ~]# tail numbers_file
+100
+23
+25
+24
+26
+27
+28
+29
+30
+
+[root@ip-172-31-41-29 ~]# head numbers_file
+2
+3
+4
+5
+6
+7
+7
+8
+9
+10
+[root@ip-172-31-41-29 ~]#
+[root@ip-172-31-41-29 ~]# head -5 numbers_file
+2
+3
+4
+5
+6
+[root@ip-172-31-41-29 ~]#
+[root@ip-172-31-41-29 ~]# tail -5 numbers_file
+27
+28
+29
+30
+
+[root@ip-172-31-41-29 ~]#
+[root@ip-172-31-41-29 ~]# #i want to print line 5 to 15
+[root@ip-172-31-41-29 ~]#
+[root@ip-172-31-41-29 ~]# sed -n '5,10p' numbers_file
+6
+7
+7
+8
+9
+10
+[root@ip-172-31-41-29 ~]#
+[root@ip-172-31-41-29 ~]#
+[root@ip-172-31-41-29 ~]# wc numbers_file
+21 20 52 numbers_file
+[root@ip-172-31-41-29 ~]#
+[root@ip-172-31-41-29 ~]# #wc to show lines words and characters
+[root@ip-172-31-41-29 ~]#
+[root@ip-172-31-41-29 ~]# #cat fil1 >> fil2 : to copy content from one file to another file without overwritting
+[root@ip-172-31-41-29 ~]#
+[root@ip-172-31-41-29 ~]# #cp fil1 >> fil2 : to copy content from one file to another file without overwritting
+[root@ip-172-31-41-29 ~]#
+[root@ip-172-31-41-29 ~]# #htop to see server performance by installing htop
+[root@ip-172-31-41-29 ~]#
+
+
+
+[root@ip-172-31-41-29 ~]# history
+    1  ls
+    2  sh git_file.sh
+    3  vi git_file.sh
+    4  mv Dev_linux.git .
+    5  vi git_file.sh
+    6  git branch
+    7  git -v
+    8  git clone https://github.com/jahnavi2609/Dev_linux.git
+    9  ls
+   10  cd Dev_linux/
+   11  git branch
+   12  vi git_file.sh
+   13  cd
+   14  vi git_file.sh
+   15  ls
+   16  find / -name "git_file.sh"
+   17  vi /home/ec2-user/git_file.sh
+   18  head file1
+   19  ls
+   20  head file1
+   21  hostname -i
+   22  cat>>file2
+   23  cat file2
+   24  cat>>file3
+   25  cat file3
+   26  rm file4
+   27  rm file5 -f
+   28  ls
+   29  touch file{200..300}
+   30  ls
+   31  rm 2* -f
+   32  ls
+   33  rm file2* -f
+   34  ls
+   35  cp file1 file2
+   36  cat file1
+   37  cat file2
+   38  cat file3
+   39  cp file2 file3
+   40  cat file2
+   41  cat file3
+   42  cp file3 file100
+   43  ls
+   44  cat file100
+   45  cat file3
+   46  #without erasing the content
+   47  cat>>file20
+   48  cat file20
+   49  cat file20 >> file1
+   50  cat file1
+   51  cat file20
+   52  cat>>numbers_file
+   53  more numbers_file
+   54  head file1
+   55  tail numbers_file
+   56  head numbers_file
+   57  head -5 numbers_file
+   58  tail -5 numbers_file
+   59  #i want to print line 5 to 15
+   60  sed -n '5,10p' numbers_file
+   61  wc numbers_file
+   62  #wc to show lines words and characters
+   63  #cat fil1 >> fil2 : to copy content from one file to another file without overwritting
+   64  #cp fil1 >> fil2 : to copy content from one file to another file without overwritting
+   65  #htop to see server performance by installing htop
+   66  history
