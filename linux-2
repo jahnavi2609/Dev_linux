@@ -1,0 +1,435 @@
+[ec2-user@ip-172-31-41-29 ~]$ sudo -i
+[root@ip-172-31-41-29 ~]#
+[root@ip-172-31-41-29 ~]#
+[root@ip-172-31-41-29 ~]#
+[root@ip-172-31-41-29 ~]# ls
+file1  file10  file100  file2  file20  file3  file300  file6  file7  file8  file9  numbers_file
+[root@ip-172-31-41-29 ~]#
+[root@ip-172-31-41-29 ~]#
+[root@ip-172-31-41-29 ~]#
+[root@ip-172-31-41-29 ~]#
+[root@ip-172-31-41-29 ~]#
+[root@ip-172-31-41-29 ~]#
+[root@ip-172-31-41-29 ~]#
+[root@ip-172-31-41-29 ~]#
+[root@ip-172-31-41-29 ~]#
+[root@ip-172-31-41-29 ~]# logout
+[ec2-user@ip-172-31-41-29 ~]$
+[ec2-user@ip-172-31-41-29 ~]$
+[ec2-user@ip-172-31-41-29 ~]$
+[ec2-user@ip-172-31-41-29 ~]$ sudo su -
+Last login: Sat Sep 14 16:46:39 UTC 2024 on pts/0
+[root@ip-172-31-41-29 ~]#
+[root@ip-172-31-41-29 ~]# ls
+file1  file10  file100  file2  file20  file3  file300  file6  file7  file8  file9  numbers_file
+[root@ip-172-31-41-29 ~]#
+[root@ip-172-31-41-29 ~]#
+[root@ip-172-31-41-29 ~]#
+[root@ip-172-31-41-29 ~]#
+[root@ip-172-31-41-29 ~]#
+[root@ip-172-31-41-29 ~]#
+[root@ip-172-31-41-29 ~]#
+[root@ip-172-31-41-29 ~]# touch file_commands
+[root@ip-172-31-41-29 ~]#
+[root@ip-172-31-41-29 ~]#
+[root@ip-172-31-41-29 ~]#
+[root@ip-172-31-41-29 ~]# ls
+file1  file10  file100  file2  file20  file3  file300  file6  file7  file8  file9  file_commands  numbers_file
+[root@ip-172-31-41-29 ~]#
+[root@ip-172-31-41-29 ~]#
+[root@ip-172-31-41-29 ~]#
+[root@ip-172-31-41-29 ~]# cat>>file_commands
+I am goig to work inside the file
+Lets see how many shortcuts are present inside the file to use
+hii
+hello
+how are you
+Have a good day
+keep learning
+keep exploring things
+[root@ip-172-31-41-29 ~]#
+[root@ip-172-31-41-29 ~]#
+[root@ip-172-31-41-29 ~]#
+[root@ip-172-31-41-29 ~]# vi file_commands
+
+[1]+  Stopped                 vi file_commands
+[root@ip-172-31-41-29 ~]#
+[root@ip-172-31-41-29 ~]#
+[root@ip-172-31-41-29 ~]# vi file_commands
+
+[2]+  Stopped                 vi file_commands
+[root@ip-172-31-41-29 ~]#
+[root@ip-172-31-41-29 ~]#
+[root@ip-172-31-41-29 ~]#
+[root@ip-172-31-41-29 ~]#
+[root@ip-172-31-41-29 ~]#
+[root@ip-172-31-41-29 ~]# vi file_commands
+[root@ip-172-31-41-29 ~]#
+[root@ip-172-31-41-29 ~]#
+[root@ip-172-31-41-29 ~]#
+[root@ip-172-31-41-29 ~]# ll
+total 28
+-rw-r--r-- 1 root root  58 Sep 11 02:50 file1
+-rw-r--r-- 1 root root   0 Sep 11 02:18 file10
+-rw-r--r-- 1 root root  40 Sep 11 02:47 file100
+-rw-r--r-- 1 root root  40 Sep 11 02:45 file2
+-rw-r--r-- 1 root root  18 Sep 11 02:49 file20
+-rw-r--r-- 1 root root  40 Sep 11 02:47 file3
+-rw-r--r-- 1 root root   0 Sep 11 02:42 file300
+-rw-r--r-- 1 root root   0 Sep 11 02:18 file6
+-rw-r--r-- 1 root root   0 Sep 11 02:18 file7
+-rw-r--r-- 1 root root   0 Sep 11 02:18 file8
+-rw-r--r-- 1 root root   0 Sep 11 02:18 file9
+-rw-r--r-- 1 root root 201 Sep 14 17:06 file_commands
+-rw-r--r-- 1 root root  52 Sep 11 02:55 numbers_file
+[root@ip-172-31-41-29 ~]#
+[root@ip-172-31-41-29 ~]#
+[root@ip-172-31-41-29 ~]#
+[root@ip-172-31-41-29 ~]#
+[root@ip-172-31-41-29 ~]#
+[root@ip-172-31-41-29 ~]# chmod 754 file1
+[root@ip-172-31-41-29 ~]#
+[root@ip-172-31-41-29 ~]# ll
+total 28
+-rwxr-xr-- 1 root root  58 Sep 11 02:50 file1
+-rw-r--r-- 1 root root   0 Sep 11 02:18 file10
+-rw-r--r-- 1 root root  40 Sep 11 02:47 file100
+-rw-r--r-- 1 root root  40 Sep 11 02:45 file2
+-rw-r--r-- 1 root root  18 Sep 11 02:49 file20
+-rw-r--r-- 1 root root  40 Sep 11 02:47 file3
+-rw-r--r-- 1 root root   0 Sep 11 02:42 file300
+-rw-r--r-- 1 root root   0 Sep 11 02:18 file6
+-rw-r--r-- 1 root root   0 Sep 11 02:18 file7
+-rw-r--r-- 1 root root   0 Sep 11 02:18 file8
+-rw-r--r-- 1 root root   0 Sep 11 02:18 file9
+-rw-r--r-- 1 root root 201 Sep 14 17:06 file_commands
+-rw-r--r-- 1 root root  52 Sep 11 02:55 numbers_file
+[root@ip-172-31-41-29 ~]#
+[root@ip-172-31-41-29 ~]# chmod u=rw,g=rx,o=rwx file2
+[root@ip-172-31-41-29 ~]#
+[root@ip-172-31-41-29 ~]# ll
+total 28
+-rwxr-xr-- 1 root root  58 Sep 11 02:50 file1
+-rw-r--r-- 1 root root   0 Sep 11 02:18 file10
+-rw-r--r-- 1 root root  40 Sep 11 02:47 file100
+-rw-r-xrwx 1 root root  40 Sep 11 02:45 file2
+-rw-r--r-- 1 root root  18 Sep 11 02:49 file20
+-rw-r--r-- 1 root root  40 Sep 11 02:47 file3
+-rw-r--r-- 1 root root   0 Sep 11 02:42 file300
+-rw-r--r-- 1 root root   0 Sep 11 02:18 file6
+-rw-r--r-- 1 root root   0 Sep 11 02:18 file7
+-rw-r--r-- 1 root root   0 Sep 11 02:18 file8
+-rw-r--r-- 1 root root   0 Sep 11 02:18 file9
+-rw-r--r-- 1 root root 201 Sep 14 17:06 file_commands
+-rw-r--r-- 1 root root  52 Sep 11 02:55 numbers_file
+[root@ip-172-31-41-29 ~]#
+[root@ip-172-31-41-29 ~]# ls -lrth file2
+-rw-r-xrwx 1 root root 40 Sep 11 02:45 file2
+[root@ip-172-31-41-29 ~]#
+[root@ip-172-31-41-29 ~]#
+[root@ip-172-31-41-29 ~]# chmod +x file8
+[root@ip-172-31-41-29 ~]#
+[root@ip-172-31-41-29 ~]# ls -lrth file8
+-rwxr-xr-x 1 root root 0 Sep 11 02:18 file8
+[root@ip-172-31-41-29 ~]#
+[root@ip-172-31-41-29 ~]# chmod +r file8
+[root@ip-172-31-41-29 ~]# ls -lrth file8
+-rwxr-xr-x 1 root root 0 Sep 11 02:18 file8
+[root@ip-172-31-41-29 ~]#
+[root@ip-172-31-41-29 ~]# chmod +w file8
+[root@ip-172-31-41-29 ~]#
+[root@ip-172-31-41-29 ~]# ls -lrth file8
+-rwxr-xr-x 1 root root 0 Sep 11 02:18 file8
+[root@ip-172-31-41-29 ~]# ll
+total 28
+-rwxr-xr-- 1 root root  58 Sep 11 02:50 file1
+-rw-r--r-- 1 root root   0 Sep 11 02:18 file10
+-rw-r--r-- 1 root root  40 Sep 11 02:47 file100
+-rw-r-xrwx 1 root root  40 Sep 11 02:45 file2
+-rw-r--r-- 1 root root  18 Sep 11 02:49 file20
+-rw-r--r-- 1 root root  40 Sep 11 02:47 file3
+-rw-r--r-- 1 root root   0 Sep 11 02:42 file300
+-rw-r--r-- 1 root root   0 Sep 11 02:18 file6
+-rw-r--r-- 1 root root   0 Sep 11 02:18 file7
+-rwxr-xr-x 1 root root   0 Sep 11 02:18 file8
+-rw-r--r-- 1 root root   0 Sep 11 02:18 file9
+-rw-r--r-- 1 root root 201 Sep 14 17:06 file_commands
+-rw-r--r-- 1 root root  52 Sep 11 02:55 numbers_file
+[root@ip-172-31-41-29 ~]#
+[root@ip-172-31-41-29 ~]# In symbolic way it is not taking write permissional.There is some drawback
+-bash: In: command not found
+[root@ip-172-31-41-29 ~]# #In symbolic way it is not taking write permissional.There is some drawback
+[root@ip-172-31-41-29 ~]#
+[root@ip-172-31-41-29 ~]#
+[root@ip-172-31-41-29 ~]#
+[root@ip-172-31-41-29 ~]#
+[root@ip-172-31-41-29 ~]#
+[root@ip-172-31-41-29 ~]#
+[root@ip-172-31-41-29 ~]# #grep commands
+[root@ip-172-31-41-29 ~]#
+[root@ip-172-31-41-29 ~]# #grep commands
+[root@ip-172-31-41-29 ~]#
+[root@ip-172-31-41-29 ~]#
+[root@ip-172-31-41-29 ~]# ls
+file1  file10  file100  file2  file20  file3  file300  file6  file7  file8  file9  file_commands  numbers_file
+[root@ip-172-31-41-29 ~]#
+[root@ip-172-31-41-29 ~]#
+[root@ip-172-31-41-29 ~]#
+[root@ip-172-31-41-29 ~]# grep hii file1
+[root@ip-172-31-41-29 ~]#
+[root@ip-172-31-41-29 ~]# grep hii file2
+[root@ip-172-31-41-29 ~]#
+[root@ip-172-31-41-29 ~]# cat file1
+Hii I am jahanvi
+I am using ec2-server
+
+Hi this is file20
+[root@ip-172-31-41-29 ~]# grep Hii file1
+Hii I am jahanvi
+[root@ip-172-31-41-29 ~]#
+[root@ip-172-31-41-29 ~]# grep Hii file1 -i
+Hii I am jahanvi
+[root@ip-172-31-41-29 ~]# grep Hii file1 -c
+1
+[root@ip-172-31-41-29 ~]# grep i file1 -c
+3
+[root@ip-172-31-41-29 ~]# grep i file1 -ic
+3
+[root@ip-172-31-41-29 ~]# grep iI file1 -ic
+1
+[root@ip-172-31-41-29 ~]# grep hii file1 -ivc
+3
+[root@ip-172-31-41-29 ~]# grep hii file1 -iv
+I am using ec2-server
+
+Hi this is file20
+[root@ip-172-31-41-29 ~]# #multiple words searching
+[root@ip-172-31-41-29 ~]#
+[root@ip-172-31-41-29 ~]# grep 'jahanvi\|ec2-user\|file20' file1
+Hii I am jahanvi
+Hi this is file20
+[root@ip-172-31-41-29 ~]# cat file1
+Hii I am jahanvi
+I am using ec2-server
+
+Hi this is file20
+[root@ip-172-31-41-29 ~]# grep 'jahanvi\|ec2-server\|file20' file1
+Hii I am jahanvi
+I am using ec2-server
+Hi this is file20
+[root@ip-172-31-41-29 ~]#
+[root@ip-172-31-41-29 ~]# grep 'jahanvi\|ec2-server\|file20' file1 -c
+3
+[root@ip-172-31-41-29 ~]#
+[root@ip-172-31-41-29 ~]# grep 'jahanvi\|ec2-server' file1
+Hii I am jahanvi
+I am using ec2-server
+[root@ip-172-31-41-29 ~]#
+[root@ip-172-31-41-29 ~]# grep 'jahanvi\|ec2-server' file1 -c
+2
+[root@ip-172-31-41-29 ~]#
+[root@ip-172-31-41-29 ~]# grep 'jahanvi\|ec2-server' file1 -v
+
+Hi this is file20
+[root@ip-172-31-41-29 ~]#
+[root@ip-172-31-41-29 ~]# grep 'jahanvi\|ec2-server' file1 -i
+Hii I am jahanvi
+I am using ec2-server
+[root@ip-172-31-41-29 ~]#
+[root@ip-172-31-41-29 ~]# cat file2
+Hii I am jahanvi
+I am using ec2-server
+
+[root@ip-172-31-41-29 ~]# cat file2 | grep ec2
+I am using ec2-server
+[root@ip-172-31-41-29 ~]#
+[root@ip-172-31-41-29 ~]# cat /etc/passwd | grep cpu
+[root@ip-172-31-41-29 ~]# cat /etc/passwd | grep ec2-user -i
+ec2-user:x:1000:1000:EC2 Default User:/home/ec2-user:/bin/bash
+[root@ip-172-31-41-29 ~]#
+[root@ip-172-31-41-29 ~]# cat lscpu | grep cpu -i
+cat: lscpu: No such file or directory
+[root@ip-172-31-41-29 ~]# lscpu | grep cpu -i
+CPU op-mode(s):      32-bit, 64-bit
+CPU(s):              2
+On-line CPU(s) list: 0,1
+CPU family:          6
+Model name:          Intel(R) Xeon(R) Platinum 8259CL CPU @ 2.50GHz
+CPU MHz:             2500.004
+NUMA node0 CPU(s):   0,1
+Flags:               fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss ht syscall nx pdpe1gb rdtscp lm constant_tsc rep_good nopl xtopology nonstop_tsc cpuid tsc_known_freq pni pclmulqdq ssse3 fma cx16 pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand hypervisor lahf_lm abm 3dnowprefetch invpcid_single pti fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid mpx avx512f avx512dq rdseed adx smap clflushopt clwb avx512cd avx512bw avx512vl xsaveopt xsavec xgetbv1 xsaves ida arat pku ospke
+[root@ip-172-31-41-29 ~]#
+[root@ip-172-31-41-29 ~]#
+[root@ip-172-31-41-29 ~]# #sed
+[root@ip-172-31-41-29 ~]#
+[root@ip-172-31-41-29 ~]# sed 's/hii/hello/g' file1
+Hii I am jahanvi
+I am using ec2-server
+
+Hi this is file20
+[root@ip-172-31-41-29 ~]# cat file1
+Hii I am jahanvi
+I am using ec2-server
+
+Hi this is file20
+[root@ip-172-31-41-29 ~]# cat file1 -i
+cat: invalid option -- 'i'
+Try 'cat --help' for more information.
+[root@ip-172-31-41-29 ~]#
+[root@ip-172-31-41-29 ~]# sed 's/hii/hello/g' file1 -i
+[root@ip-172-31-41-29 ~]#
+[root@ip-172-31-41-29 ~]# cat file1
+Hii I am jahanvi
+I am using ec2-server
+
+Hi this is file20
+[root@ip-172-31-41-29 ~]# sed -i 's/hii/hello/g' file1 >> file50
+[root@ip-172-31-41-29 ~]# cat file50
+[root@ip-172-31-41-29 ~]#
+[root@ip-172-31-41-29 ~]# sed -i 's/hii/hello/' file1 >> file50
+[root@ip-172-31-41-29 ~]#
+[root@ip-172-31-41-29 ~]# cat file50
+[root@ip-172-31-41-29 ~]#
+[root@ip-172-31-41-29 ~]# sed -i 's/hii/hello/' file1 >> file2
+[root@ip-172-31-41-29 ~]#
+[root@ip-172-31-41-29 ~]# cat file2
+Hii I am jahanvi
+I am using ec2-server
+
+[root@ip-172-31-41-29 ~]# ls
+file1  file10  file100  file2  file20  file3  file300  file50  file6  file7  file8  file9  file_commands  numbers_file
+[root@ip-172-31-41-29 ~]# cat file50
+[root@ip-172-31-41-29 ~]#
+[root@ip-172-31-41-29 ~]# vi file50
+
+[3]+  Stopped                 vi file50
+[root@ip-172-31-41-29 ~]#
+[root@ip-172-31-41-29 ~]# cat fil1
+cat: fil1: No such file or directory
+[root@ip-172-31-41-29 ~]# cat file1
+Hii I am jahanvi
+I am using ec2-server
+
+Hi this is file20
+[root@ip-172-31-41-29 ~]#
+[root@ip-172-31-41-29 ~]# #but in original file even though if we replace it never changes
+[root@ip-172-31-41-29 ~]#
+[root@ip-172-31-41-29 ~]#
+[root@ip-172-31-41-29 ~]# sed 's/hii/hello/' file1 >> file50
+[root@ip-172-31-41-29 ~]#
+[root@ip-172-31-41-29 ~]# cat file50
+Hii I am jahanvi
+I am using ec2-server
+
+Hi this is file20
+[root@ip-172-31-41-29 ~]#
+[root@ip-172-31-41-29 ~]# #because of -i it didn't worked before
+[root@ip-172-31-41-29 ~]#
+[root@ip-172-31-41-29 ~]#
+[root@ip-172-31-41-29 ~]#
+[root@ip-172-31-41-29 ~]# sed 's/hii/hello/;s/Hii/HELLO/' file1 >> file50
+[root@ip-172-31-41-29 ~]#
+[root@ip-172-31-41-29 ~]# cat file50
+Hii I am jahanvi
+I am using ec2-server
+
+Hi this is file20
+HELLO I am jahanvi
+I am using ec2-server
+
+Hi this is file20
+[root@ip-172-31-41-29 ~]# cat file1
+Hii I am jahanvi
+I am using ec2-server
+
+Hi this is file20
+[root@ip-172-31-41-29 ~]#
+[root@ip-172-31-41-29 ~]#
+[root@ip-172-31-41-29 ~]# sed '2c i am replacing the second line' file1
+Hii I am jahanvi
+i am replacing the second line
+
+Hi this is file20
+[root@ip-172-31-41-29 ~]#
+[root@ip-172-31-41-29 ~]# sed '3c i am replacing the second line' file1
+Hii I am jahanvi
+I am using ec2-server
+i am replacing the second line
+Hi this is file20
+[root@ip-172-31-41-29 ~]#
+[root@ip-172-31-41-29 ~]# cat file1
+Hii I am jahanvi
+I am using ec2-server
+
+Hi this is file20
+[root@ip-172-31-41-29 ~]# #we can replace every time last replacement will not show in he current replacing
+[root@ip-172-31-41-29 ~]#
+[root@ip-172-31-41-29 ~]# sed -n '2,4p' file1
+I am using ec2-server
+
+Hi this is file20
+[root@ip-172-31-41-29 ~]#
+[root@ip-172-31-41-29 ~]# cat file1 | sed -n '2,4p'
+I am using ec2-server
+
+Hi this is file20
+[root@ip-172-31-41-29 ~]#
+[root@ip-172-31-41-29 ~]# cat -n  file1 | sed -n '2,4p'
+     2  I am using ec2-server
+     3
+     4  Hi this is file20
+[root@ip-172-31-41-29 ~]#
+[root@ip-172-31-41-29 ~]#
+[root@ip-172-31-41-29 ~]# # From outside of the file
+[root@ip-172-31-41-29 ~]# #:%s/word1/word2/
+[root@ip-172-31-41-29 ~]# to remove the word if it repeats twice we need to use the below command
+-bash: to: command not found
+[root@ip-172-31-41-29 ~]# #to remove the word if it repeats twice we need to use the below command
+[root@ip-172-31-41-29 ~]# #
+[root@ip-172-31-41-29 ~]# #:%s/word1/word2/g
+[root@ip-172-31-41-29 ~]#
+[root@ip-172-31-41-29 ~]# #u : undo
+[root@ip-172-31-41-29 ~]#
+[root@ip-172-31-41-29 ~]#
+[root@ip-172-31-41-29 ~]#
+[root@ip-172-31-41-29 ~]# # creating users
+[root@ip-172-31-41-29 ~]#
+[root@ip-172-31-41-29 ~]# useradd jahnavi
+[root@ip-172-31-41-29 ~]# cat /etc/passwd
+root:x:0:0:root:/root:/bin/bash
+bin:x:1:1:bin:/bin:/sbin/nologin
+daemon:x:2:2:daemon:/sbin:/sbin/nologin
+adm:x:3:4:adm:/var/adm:/sbin/nologin
+lp:x:4:7:lp:/var/spool/lpd:/sbin/nologin
+sync:x:5:0:sync:/sbin:/bin/sync
+shutdown:x:6:0:shutdown:/sbin:/sbin/shutdown
+halt:x:7:0:halt:/sbin:/sbin/halt
+mail:x:8:12:mail:/var/spool/mail:/sbin/nologin
+operator:x:11:0:operator:/root:/sbin/nologin
+games:x:12:100:games:/usr/games:/sbin/nologin
+ftp:x:14:50:FTP User:/var/ftp:/sbin/nologin
+nobody:x:99:99:Nobody:/:/sbin/nologin
+systemd-network:x:192:192:systemd Network Management:/:/sbin/nologin
+dbus:x:81:81:System message bus:/:/sbin/nologin
+rpc:x:32:32:Rpcbind Daemon:/var/lib/rpcbind:/sbin/nologin
+libstoragemgmt:x:999:997:daemon account for libstoragemgmt:/var/run/lsm:/sbin/nologin
+sshd:x:74:74:Privilege-separated SSH:/var/empty/sshd:/sbin/nologin
+rngd:x:998:996:Random Number Generator Daemon:/var/lib/rngd:/sbin/nologin
+rpcuser:x:29:29:RPC Service User:/var/lib/nfs:/sbin/nologin
+nfsnobody:x:65534:65534:Anonymous NFS User:/var/lib/nfs:/sbin/nologin
+ec2-instance-connect:x:997:995::/home/ec2-instance-connect:/sbin/nologin
+postfix:x:89:89::/var/spool/postfix:/sbin/nologin
+chrony:x:996:994::/var/lib/chrony:/sbin/nologin
+tcpdump:x:72:72::/:/sbin/nologin
+ec2-user:x:1000:1000:EC2 Default User:/home/ec2-user:/bin/bash
+apache:x:48:48:Apache:/usr/share/httpd:/sbin/nologin
+jahnavi:x:1001:1001::/home/jahnavi:/bin/bash
+[root@ip-172-31-41-29 ~]#
+[root@ip-172-31-41-29 ~]# # above command is to see list of users
+[root@ip-172-31-41-29 ~]#
+[root@ip-172-31-41-29 ~]# passwd jahnavi
+Changing password for user jahnavi.
+New password:
+BAD PASSWORD: The password is shorter than 8 characters
+Retype new password:
+passwd: all authentication tokens updated successfully.
