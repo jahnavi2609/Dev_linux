@@ -1,0 +1,130 @@
+[ec2-user@ip-172-31-41-29 ~]$ sudo -i
+[root@ip-172-31-41-29 ~]#
+[root@ip-172-31-41-29 ~]#
+[root@ip-172-31-41-29 ~]#
+[root@ip-172-31-41-29 ~]#
+[root@ip-172-31-41-29 ~]# ls
+file1  file10  file100  file2  file20  file3  file300  file50  file6  file7  file8  file9  file_commands  numbers_file
+[root@ip-172-31-41-29 ~]#
+[root@ip-172-31-41-29 ~]#
+[root@ip-172-31-41-29 ~]#
+[root@ip-172-31-41-29 ~]#
+[root@ip-172-31-41-29 ~]#
+[root@ip-172-31-41-29 ~]#
+[root@ip-172-31-41-29 ~]#
+[root@ip-172-31-41-29 ~]#
+[root@ip-172-31-41-29 ~]# visudo
+[root@ip-172-31-41-29 ~]#
+[root@ip-172-31-41-29 ~]#
+[root@ip-172-31-41-29 ~]#
+[root@ip-172-31-41-29 ~]#
+[root@ip-172-31-41-29 ~]#
+[root@ip-172-31-41-29 ~]# cat /etc/pa
+pam.d/   passwd   passwd-
+[root@ip-172-31-41-29 ~]# cat /etc/passwd
+root:x:0:0:root:/root:/bin/bash
+bin:x:1:1:bin:/bin:/sbin/nologin
+daemon:x:2:2:daemon:/sbin:/sbin/nologin
+adm:x:3:4:adm:/var/adm:/sbin/nologin
+lp:x:4:7:lp:/var/spool/lpd:/sbin/nologin
+sync:x:5:0:sync:/sbin:/bin/sync
+shutdown:x:6:0:shutdown:/sbin:/sbin/shutdown
+halt:x:7:0:halt:/sbin:/sbin/halt
+mail:x:8:12:mail:/var/spool/mail:/sbin/nologin
+operator:x:11:0:operator:/root:/sbin/nologin
+games:x:12:100:games:/usr/games:/sbin/nologin
+ftp:x:14:50:FTP User:/var/ftp:/sbin/nologin
+nobody:x:99:99:Nobody:/:/sbin/nologin
+systemd-network:x:192:192:systemd Network Management:/:/sbin/nologin
+dbus:x:81:81:System message bus:/:/sbin/nologin
+rpc:x:32:32:Rpcbind Daemon:/var/lib/rpcbind:/sbin/nologin
+libstoragemgmt:x:999:997:daemon account for libstoragemgmt:/var/run/lsm:/sbin/nologin
+sshd:x:74:74:Privilege-separated SSH:/var/empty/sshd:/sbin/nologin
+rngd:x:998:996:Random Number Generator Daemon:/var/lib/rngd:/sbin/nologin
+rpcuser:x:29:29:RPC Service User:/var/lib/nfs:/sbin/nologin
+nfsnobody:x:65534:65534:Anonymous NFS User:/var/lib/nfs:/sbin/nologin
+ec2-instance-connect:x:997:995::/home/ec2-instance-connect:/sbin/nologin
+postfix:x:89:89::/var/spool/postfix:/sbin/nologin
+chrony:x:996:994::/var/lib/chrony:/sbin/nologin
+tcpdump:x:72:72::/:/sbin/nologin
+ec2-user:x:1000:1000:EC2 Default User:/home/ec2-user:/bin/bash
+apache:x:48:48:Apache:/usr/share/httpd:/sbin/nologin
+jahnavi:x:1001:1001::/home/jahnavi:/bin/bash
+Jahnavim:x:1002:1002::/home/Jahnavim:/bin/bash
+[root@ip-172-31-41-29 ~]#
+[root@ip-172-31-41-29 ~]#
+[root@ip-172-31-41-29 ~]#
+[root@ip-172-31-41-29 ~]# su - jahnavi
+[jahnavi@ip-172-31-41-29 ~]$
+[jahnavi@ip-172-31-41-29 ~]$
+[jahnavi@ip-172-31-41-29 ~]$ su
+su          sudo        sudoedit    sudoreplay  sulogin     sum         sushell     suspend
+[jahnavi@ip-172-31-41-29 ~]$ sudo yum install git -y
+
+We trust you have received the usual lecture from the local System
+Administrator. It usually boils down to these three things:
+
+    #1) Respect the privacy of others.
+    #2) Think before you type.
+    #3) With great power comes great responsibility.
+
+[sudo] password for jahnavi:
+Loaded plugins: extras_suggestions, langpacks, priorities, update-motd
+amzn2-core                                                                                                        | 3.6 kB  00:00:00
+Package git-2.40.1-1.amzn2.0.3.x86_64 already installed and latest version
+Nothing to do
+[jahnavi@ip-172-31-41-29 ~]$
+[jahnavi@ip-172-31-41-29 ~]$
+[jahnavi@ip-172-31-41-29 ~]$
+[jahnavi@ip-172-31-41-29 ~]$ git -v
+git version 2.40.1
+[jahnavi@ip-172-31-41-29 ~]$
+[jahnavi@ip-172-31-41-29 ~]$ visudo
+visudo: /etc/sudoers: Permission denied
+[jahnavi@ip-172-31-41-29 ~]$ logout
+[root@ip-172-31-41-29 ~]#
+[root@ip-172-31-41-29 ~]#
+[root@ip-172-31-41-29 ~]# visudo
+
+[1]+  Stopped                 visudo
+[root@ip-172-31-41-29 ~]#
+[root@ip-172-31-41-29 ~]#
+[root@ip-172-31-41-29 ~]# su - jahnavi
+Last login: Sun Sep 15 07:53:45 UTC 2024 on pts/2
+[jahnavi@ip-172-31-41-29 ~]$
+[jahnavi@ip-172-31-41-29 ~]$
+[jahnavi@ip-172-31-41-29 ~]$ ls
+[jahnavi@ip-172-31-41-29 ~]$
+[jahnavi@ip-172-31-41-29 ~]$ sudo useradd gayathri
+[jahnavi@ip-172-31-41-29 ~]$ cat /etc/passwd
+root:x:0:0:root:/root:/bin/bash
+bin:x:1:1:bin:/bin:/sbin/nologin
+daemon:x:2:2:daemon:/sbin:/sbin/nologin
+adm:x:3:4:adm:/var/adm:/sbin/nologin
+lp:x:4:7:lp:/var/spool/lpd:/sbin/nologin
+sync:x:5:0:sync:/sbin:/bin/sync
+shutdown:x:6:0:shutdown:/sbin:/sbin/shutdown
+halt:x:7:0:halt:/sbin:/sbin/halt
+mail:x:8:12:mail:/var/spool/mail:/sbin/nologin
+operator:x:11:0:operator:/root:/sbin/nologin
+games:x:12:100:games:/usr/games:/sbin/nologin
+ftp:x:14:50:FTP User:/var/ftp:/sbin/nologin
+nobody:x:99:99:Nobody:/:/sbin/nologin
+systemd-network:x:192:192:systemd Network Management:/:/sbin/nologin
+dbus:x:81:81:System message bus:/:/sbin/nologin
+rpc:x:32:32:Rpcbind Daemon:/var/lib/rpcbind:/sbin/nologin
+libstoragemgmt:x:999:997:daemon account for libstoragemgmt:/var/run/lsm:/sbin/nologin
+sshd:x:74:74:Privilege-separated SSH:/var/empty/sshd:/sbin/nologin
+rngd:x:998:996:Random Number Generator Daemon:/var/lib/rngd:/sbin/nologin
+rpcuser:x:29:29:RPC Service User:/var/lib/nfs:/sbin/nologin
+nfsnobody:x:65534:65534:Anonymous NFS User:/var/lib/nfs:/sbin/nologin
+ec2-instance-connect:x:997:995::/home/ec2-instance-connect:/sbin/nologin
+postfix:x:89:89::/var/spool/postfix:/sbin/nologin
+chrony:x:996:994::/var/lib/chrony:/sbin/nologin
+tcpdump:x:72:72::/:/sbin/nologin
+ec2-user:x:1000:1000:EC2 Default User:/home/ec2-user:/bin/bash
+apache:x:48:48:Apache:/usr/share/httpd:/sbin/nologin
+jahnavi:x:1001:1001::/home/jahnavi:/bin/bash
+Jahnavim:x:1002:1002::/home/Jahnavim:/bin/bash
+gayathri:x:1003:1003::/home/gayathri:/bin/bash
+[jahnavi@ip-172-31-41-29 ~]$
