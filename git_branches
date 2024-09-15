@@ -1,0 +1,234 @@
+    1  hostname -i
+    2  #create a ec2-user
+    3  #mkdir git_prac
+    4  #cd git_prac
+    5  mkdir git_prac
+    6  cd git_prac/
+    7  #yum install git -y [yum=package manager, install -action,git=pkg]
+    8  yum install git -y
+    9  git -v
+   10  git init
+   11  ls
+   12  ls -al
+   13  history
+
+
+[root@ip-172-31-40-205 git_prac]# git branch
+  master
+* movies
+[root@ip-172-31-40-205 git_prac]#
+[root@ip-172-31-40-205 git_prac]#
+[root@ip-172-31-40-205 git_prac]#
+[root@ip-172-31-40-205 git_prac]# git init
+Reinitialized existing Git repository in /root/git_prac/.git/
+[root@ip-172-31-40-205 git_prac]#
+[root@ip-172-31-40-205 git_prac]#
+[root@ip-172-31-40-205 git_prac]#
+[root@ip-172-31-40-205 git_prac]# ll
+total 8
+-rw-r--r-- 1 root root 767 Sep 15 09:41 index.html
+-rw-r--r-- 1 root root   0 Sep 15 09:45 java1
+-rw-r--r-- 1 root root   0 Sep 15 10:15 movies1
+-rw-r--r-- 1 root root   0 Sep 15 10:15 movies2
+-rw-r--r-- 1 root root   0 Sep 15 10:15 movies3
+-rw-r--r-- 1 root root   0 Sep 15 10:15 movies4
+-rw-r--r-- 1 root root   0 Sep 15 10:15 movies5
+-rw-r--r-- 1 root root  13 Sep 15 10:02 pyhton2
+-rw-r--r-- 1 root root   0 Sep 15 09:46 python1
+[root@ip-172-31-40-205 git_prac]#
+[root@ip-172-31-40-205 git_prac]#
+[root@ip-172-31-40-205 git_prac]#
+[root@ip-172-31-40-205 git_prac]#
+[root@ip-172-31-40-205 git_prac]# git branch train
+[root@ip-172-31-40-205 git_prac]#
+[root@ip-172-31-40-205 git_prac]# git branch
+  master
+* movies
+  train
+[root@ip-172-31-40-205 git_prac]#
+[root@ip-172-31-40-205 git_prac]# git checkout train
+Switched to branch 'train'
+[root@ip-172-31-40-205 git_prac]#
+[root@ip-172-31-40-205 git_prac]# git branch
+  master
+  movies
+* train
+[root@ip-172-31-40-205 git_prac]# touch train{1..5}
+[root@ip-172-31-40-205 git_prac]#
+[root@ip-172-31-40-205 git_prac]#
+[root@ip-172-31-40-205 git_prac]# ls
+index.html  java1  movies1  movies2  movies3  movies4  movies5  pyhton2  python1  train1  train2  train3  train4  train5
+[root@ip-172-31-40-205 git_prac]#
+[root@ip-172-31-40-205 git_prac]#
+[root@ip-172-31-40-205 git_prac]#
+[root@ip-172-31-40-205 git_prac]#
+[root@ip-172-31-40-205 git_prac]#
+[root@ip-172-31-40-205 git_prac]#
+[root@ip-172-31-40-205 git_prac]#
+[root@ip-172-31-40-205 git_prac]#
+[root@ip-172-31-40-205 git_prac]#
+[root@ip-172-31-40-205 git_prac]#
+[root@ip-172-31-40-205 git_prac]#
+[root@ip-172-31-40-205 git_prac]# git branch
+  master
+  movies
+* train
+[root@ip-172-31-40-205 git_prac]#
+[root@ip-172-31-40-205 git_prac]# git checkout -b dth
+Switched to a new branch 'dth'
+[root@ip-172-31-40-205 git_prac]#
+[root@ip-172-31-40-205 git_prac]# git branch
+* dth
+  master
+  movies
+  train
+[root@ip-172-31-40-205 git_prac]#
+[root@ip-172-31-40-205 git_prac]# ll
+total 8
+-rw-r--r-- 1 root root 767 Sep 15 09:41 index.html
+-rw-r--r-- 1 root root   0 Sep 15 09:45 java1
+-rw-r--r-- 1 root root   0 Sep 15 10:15 movies1
+-rw-r--r-- 1 root root   0 Sep 15 10:15 movies2
+-rw-r--r-- 1 root root   0 Sep 15 10:15 movies3
+-rw-r--r-- 1 root root   0 Sep 15 10:15 movies4
+-rw-r--r-- 1 root root   0 Sep 15 10:15 movies5
+-rw-r--r-- 1 root root  13 Sep 15 10:02 pyhton2
+-rw-r--r-- 1 root root   0 Sep 15 09:46 python1
+-rw-r--r-- 1 root root   0 Sep 15 11:01 train1
+-rw-r--r-- 1 root root   0 Sep 15 11:01 train2
+-rw-r--r-- 1 root root   0 Sep 15 11:01 train3
+-rw-r--r-- 1 root root   0 Sep 15 11:01 train4
+-rw-r--r-- 1 root root   0 Sep 15 11:01 train5
+[root@ip-172-31-40-205 git_prac]#
+[root@ip-172-31-40-205 git_prac]#
+[root@ip-172-31-40-205 git_prac]# touch dth{1..5}
+[root@ip-172-31-40-205 git_prac]# git add dth*
+[root@ip-172-31-40-205 git_prac]#
+[root@ip-172-31-40-205 git_prac]# git commit - "dth_files" dth*
+error: pathspec '-' did not match any file(s) known to git
+error: pathspec 'dth_files' did not match any file(s) known to git
+[root@ip-172-31-40-205 git_prac]# git commit -m "dth_files" dth*
+[dth 279749f] dth_files
+ 5 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 dth1
+ create mode 100644 dth2
+ create mode 100644 dth3
+ create mode 100644 dth4
+ create mode 100644 dth5
+[root@ip-172-31-40-205 git_prac]#
+[root@ip-172-31-40-205 git_prac]# git status
+On branch dth
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        train1
+        train2
+        train3
+        train4
+        train5
+
+nothing added to commit but untracked files present (use "git add" to track)
+[root@ip-172-31-40-205 git_prac]#
+[root@ip-172-31-40-205 git_prac]# git add dth*
+[root@ip-172-31-40-205 git_prac]#
+[root@ip-172-31-40-205 git_prac]# git status
+On branch dth
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        train1
+        train2
+        train3
+        train4
+        train5
+
+nothing added to commit but untracked files present (use "git add" to track)
+[root@ip-172-31-40-205 git_prac]#
+[root@ip-172-31-40-205 git_prac]#
+[root@ip-172-31-40-205 git_prac]#
+[root@ip-172-31-40-205 git_prac]# git checkout -b train
+fatal: a branch named 'train' already exists
+[root@ip-172-31-40-205 git_prac]#
+[root@ip-172-31-40-205 git_prac]# git checkout train
+Switched to branch 'train'
+[root@ip-172-31-40-205 git_prac]#
+[root@ip-172-31-40-205 git_prac]# git add train*
+[root@ip-172-31-40-205 git_prac]#
+[root@ip-172-31-40-205 git_prac]# git status
+On branch train
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   train1
+        new file:   train2
+        new file:   train3
+        new file:   train4
+        new file:   train5
+
+[root@ip-172-31-40-205 git_prac]#
+[root@ip-172-31-40-205 git_prac]#
+[root@ip-172-31-40-205 git_prac]# git commit -m "train_files" train*
+[train bc3e05e] train_files
+ 5 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 train1
+ create mode 100644 train2
+ create mode 100644 train3
+ create mode 100644 train4
+ create mode 100644 train5
+[root@ip-172-31-40-205 git_prac]#
+[root@ip-172-31-40-205 git_prac]#
+[root@ip-172-31-40-205 git_prac]#
+[root@ip-172-31-40-205 git_prac]# git push origin train
+Username for 'https://github.com': jahnavi2609
+Password for 'https://jahnavi2609@github.com':
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 253 bytes | 253.00 KiB/s, done.
+Total 2 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote: Create a pull request for 'train' on GitHub by visiting:
+remote:      https://github.com/jahnavi2609/GIt/pull/new/train
+remote:
+To https://github.com/jahnavi2609/GIt.git
+ * [new branch]      train -> train
+[root@ip-172-31-40-205 git_prac]#
+[root@ip-172-31-40-205 git_prac]#
+[root@ip-172-31-40-205 git_prac]# git checkout dth
+Switched to branch 'dth'
+[root@ip-172-31-40-205 git_prac]#
+[root@ip-172-31-40-205 git_prac]#
+[root@ip-172-31-40-205 git_prac]#
+[root@ip-172-31-40-205 git_prac]# ll
+total 8
+-rw-r--r-- 1 root root   0 Sep 15 11:17 dth1
+-rw-r--r-- 1 root root   0 Sep 15 11:17 dth2
+-rw-r--r-- 1 root root   0 Sep 15 11:17 dth3
+-rw-r--r-- 1 root root   0 Sep 15 11:17 dth4
+-rw-r--r-- 1 root root   0 Sep 15 11:17 dth5
+-rw-r--r-- 1 root root 767 Sep 15 09:41 index.html
+-rw-r--r-- 1 root root   0 Sep 15 09:45 java1
+-rw-r--r-- 1 root root   0 Sep 15 10:15 movies1
+-rw-r--r-- 1 root root   0 Sep 15 10:15 movies2
+-rw-r--r-- 1 root root   0 Sep 15 10:15 movies3
+-rw-r--r-- 1 root root   0 Sep 15 10:15 movies4
+-rw-r--r-- 1 root root   0 Sep 15 10:15 movies5
+-rw-r--r-- 1 root root  13 Sep 15 10:02 pyhton2
+-rw-r--r-- 1 root root   0 Sep 15 09:46 python1
+[root@ip-172-31-40-205 git_prac]#
+[root@ip-172-31-40-205 git_prac]#
+[root@ip-172-31-40-205 git_prac]# git push origin dth
+Username for 'https://github.com': jahnavi2609
+Password for 'https://jahnavi2609@github.com':
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 256 bytes | 256.00 KiB/s, done.
+Total 2 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote: Create a pull request for 'dth' on GitHub by visiting:
+remote:      https://github.com/jahnavi2609/GIt/pull/new/dth
+remote:
+To https://github.com/jahnavi2609/GIt.git
+ * [new branch]      dth -> dth
