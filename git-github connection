@@ -1,0 +1,57 @@
+[ec2-user@ip-172-31-40-205 ~]$
+[ec2-user@ip-172-31-40-205 ~]$ sudo su -
+Last login: Sun Sep 15 09:55:44 UTC 2024 on pts/2
+[root@ip-172-31-40-205 ~]#
+[root@ip-172-31-40-205 ~]#
+[root@ip-172-31-40-205 ~]#
+[root@ip-172-31-40-205 ~]#
+[root@ip-172-31-40-205 ~]#
+[root@ip-172-31-40-205 ~]#
+[root@ip-172-31-40-205 ~]#
+[root@ip-172-31-40-205 ~]#
+[root@ip-172-31-40-205 ~]# ls
+git_prac
+[root@ip-172-31-40-205 ~]#
+[root@ip-172-31-40-205 ~]#
+[root@ip-172-31-40-205 ~]# cd git_prac/
+[root@ip-172-31-40-205 git_prac]#
+[root@ip-172-31-40-205 git_prac]#
+[root@ip-172-31-40-205 git_prac]#
+[root@ip-172-31-40-205 git_prac]# ls
+index.html  java1  movies1  movies2  movies3  movies4  movies5  pyhton2  python1
+[root@ip-172-31-40-205 git_prac]#
+[root@ip-172-31-40-205 git_prac]#
+[root@ip-172-31-40-205 git_prac]#
+[root@ip-172-31-40-205 git_prac]#
+[root@ip-172-31-40-205 git_prac]#
+[root@ip-172-31-40-205 git_prac]# git branch
+  master
+* movies
+[root@ip-172-31-40-205 git_prac]#
+[root@ip-172-31-40-205 git_prac]#
+[root@ip-172-31-40-205 git_prac]# git remote add origin https://github.com/jahnavi2609/GIt.git
+error: remote origin already exists.
+[root@ip-172-31-40-205 git_prac]#
+[root@ip-172-31-40-205 git_prac]# git push origin movies
+Username for 'https://github.com': jahnavi2609
+Password for 'https://jahnavi2609@github.com':
+Enumerating objects: 13, done.
+Counting objects: 100% (13/13), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (10/10), done.
+Writing objects: 100% (13/13), 1.37 KiB | 466.00 KiB/s, done.
+Total 13 (delta 4), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (4/4), done.
+To https://github.com/jahnavi2609/GIt.git
+ * [new branch]      movies -> movies
+[root@ip-172-31-40-205 git_prac]#
+[root@ip-172-31-40-205 git_prac]# git push origin master
+Username for 'https://github.com': jahnavi2609
+Password for 'https://jahnavi2609@github.com':
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'master' on GitHub by visiting:
+remote:      https://github.com/jahnavi2609/GIt/pull/new/master
+remote:
+To https://github.com/jahnavi2609/GIt.git
+ * [new branch]      master -> master
