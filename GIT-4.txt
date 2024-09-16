@@ -1,0 +1,633 @@
+[root@ip-172-31-40-205 git_prac]# git branch
+  dth
+* master
+  movies
+  recharge
+  train
+[root@ip-172-31-40-205 git_prac]#
+[root@ip-172-31-40-205 git_prac]#
+[root@ip-172-31-40-205 git_prac]#
+[root@ip-172-31-40-205 git_prac]#
+[root@ip-172-31-40-205 git_prac]#
+[root@ip-172-31-40-205 git_prac]#
+[root@ip-172-31-40-205 git_prac]# git branch -D movies
+Deleted branch movies (was 96cb840).
+[root@ip-172-31-40-205 git_prac]#
+[root@ip-172-31-40-205 git_prac]#
+[root@ip-172-31-40-205 git_prac]# git pull origin movies
+From https://github.com/jahnavi2609/GIt
+ * branch            movies     -> FETCH_HEAD
+Already up to date.
+[root@ip-172-31-40-205 git_prac]#
+[root@ip-172-31-40-205 git_prac]#
+[root@ip-172-31-40-205 git_prac]#
+[root@ip-172-31-40-205 git_prac]# git branch
+  dth
+* master
+  recharge
+  train
+[root@ip-172-31-40-205 git_prac]#
+[root@ip-172-31-40-205 git_prac]#
+[root@ip-172-31-40-205 git_prac]# git checkout movies
+branch 'movies' set up to track 'origin/movies'.
+Switched to a new branch 'movies'
+[root@ip-172-31-40-205 git_prac]#
+[root@ip-172-31-40-205 git_prac]#
+[root@ip-172-31-40-205 git_prac]# git branch
+  dth
+  master
+* movies
+  recharge
+  train
+[root@ip-172-31-40-205 git_prac]#
+[root@ip-172-31-40-205 git_prac]#
+[root@ip-172-31-40-205 git_prac]#
+[root@ip-172-31-40-205 git_prac]#
+[root@ip-172-31-40-205 git_prac]# git branch movies
+fatal: a branch named 'movies' already exists
+[root@ip-172-31-40-205 git_prac]#
+[root@ip-172-31-40-205 git_prac]#
+[root@ip-172-31-40-205 git_prac]#
+[root@ip-172-31-40-205 git_prac]# touch file89
+[root@ip-172-31-40-205 git_prac]#
+[root@ip-172-31-40-205 git_prac]#
+[root@ip-172-31-40-205 git_prac]# ls
+file89  index.html  java1  java2  java25  java3  java4  java5  movies1  movies2  movies3  movies4  movies5  pyhton2  python  python1
+[root@ip-172-31-40-205 git_prac]#
+[root@ip-172-31-40-205 git_prac]#
+[root@ip-172-31-40-205 git_prac]# git add file89
+[root@ip-172-31-40-205 git_prac]#
+[root@ip-172-31-40-205 git_prac]# git status
+On branch movies
+Your branch is up to date with 'origin/movies'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   file89
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .gitignore
+        python
+
+[root@ip-172-31-40-205 git_prac]#
+[root@ip-172-31-40-205 git_prac]#
+[root@ip-172-31-40-205 git_prac]# git stash
+Saved working directory and index state WIP on movies: 96cb840 movies_files
+[root@ip-172-31-40-205 git_prac]#
+[root@ip-172-31-40-205 git_prac]# git status
+On branch movies
+Your branch is up to date with 'origin/movies'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .gitignore
+        python
+
+nothing added to commit but untracked files present (use "git add" to track)
+[root@ip-172-31-40-205 git_prac]#
+[root@ip-172-31-40-205 git_prac]#
+[root@ip-172-31-40-205 git_prac]#
+[root@ip-172-31-40-205 git_prac]#
+[root@ip-172-31-40-205 git_prac]# #storing files temporarily before commiting--stash
+[root@ip-172-31-40-205 git_prac]#
+[root@ip-172-31-40-205 git_prac]# #file need to be tracked but not committed
+[root@ip-172-31-40-205 git_prac]#
+[root@ip-172-31-40-205 git_prac]#
+[root@ip-172-31-40-205 git_prac]# git stash list
+stash@{0}: WIP on movies: 96cb840 movies_files
+stash@{1}: WIP on dth: a66d00b rechrge_files
+[root@ip-172-31-40-205 git_prac]#
+[root@ip-172-31-40-205 git_prac]#
+[root@ip-172-31-40-205 git_prac]# git stash clear
+[root@ip-172-31-40-205 git_prac]#
+[root@ip-172-31-40-205 git_prac]# git stash list
+[root@ip-172-31-40-205 git_prac]#
+[root@ip-172-31-40-205 git_prac]#
+[root@ip-172-31-40-205 git_prac]#
+[root@ip-172-31-40-205 git_prac]# git stash --help
+
+[1]+  Stopped                 git stash --help
+[root@ip-172-31-40-205 git_prac]#
+[root@ip-172-31-40-205 git_prac]#
+[root@ip-172-31-40-205 git_prac]#
+[root@ip-172-31-40-205 git_prac]#
+[root@ip-172-31-40-205 git_prac]#
+[root@ip-172-31-40-205 git_prac]# git checkout -b branch1
+Switched to a new branch 'branch1'
+[root@ip-172-31-40-205 git_prac]# touch branch1
+[root@ip-172-31-40-205 git_prac]#
+[root@ip-172-31-40-205 git_prac]# vi branch1
+[root@ip-172-31-40-205 git_prac]#
+[root@ip-172-31-40-205 git_prac]#
+[root@ip-172-31-40-205 git_prac]# git add .
+[root@ip-172-31-40-205 git_prac]#
+[root@ip-172-31-40-205 git_prac]# git commit -m "file1" branch1
+[branch1 eac9748] file1
+ 1 file changed, 1 insertion(+)
+ create mode 100644 branch1
+[root@ip-172-31-40-205 git_prac]#
+[root@ip-172-31-40-205 git_prac]# ls
+branch1  index.html  java1  java2  java25  java3  java4  java5  movies1  movies2  movies3  movies4  movies5  pyhton2  python  python1
+[root@ip-172-31-40-205 git_prac]#
+[root@ip-172-31-40-205 git_prac]#
+[root@ip-172-31-40-205 git_prac]# git push origin branch1
+Username for 'https://github.com': ^Z
+[2]+  Stopped                 git push origin branch1
+[root@ip-172-31-40-205 git_prac]#
+[root@ip-172-31-40-205 git_prac]#
+[root@ip-172-31-40-205 git_prac]# git checkout -b branch2
+Switched to a new branch 'branch2'
+[root@ip-172-31-40-205 git_prac]#
+[root@ip-172-31-40-205 git_prac]# vi branch2
+[root@ip-172-31-40-205 git_prac]#
+[root@ip-172-31-40-205 git_prac]#
+[root@ip-172-31-40-205 git_prac]# cat  branch2
+java branch2
+[root@ip-172-31-40-205 git_prac]#
+[root@ip-172-31-40-205 git_prac]# git add .
+[root@ip-172-31-40-205 git_prac]#
+[root@ip-172-31-40-205 git_prac]# git status
+On branch branch2
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   .gitignore
+        new file:   branch2
+        new file:   python
+
+[root@ip-172-31-40-205 git_prac]#
+[root@ip-172-31-40-205 git_prac]# git commit -m "branch2" branch2
+[branch2 a4c3aa3] branch2
+ 1 file changed, 1 insertion(+)
+ create mode 100644 branch2
+[root@ip-172-31-40-205 git_prac]#
+[root@ip-172-31-40-205 git_prac]# ls
+branch1  index.html  java2   java3  java5    movies2  movies4  pyhton2  python1
+branch2  java1       java25  java4  movies1  movies3  movies5  python
+[root@ip-172-31-40-205 git_prac]#
+[root@ip-172-31-40-205 git_prac]#
+[root@ip-172-31-40-205 git_prac]# git merge branch1
+Already up to date.
+[root@ip-172-31-40-205 git_prac]#
+[root@ip-172-31-40-205 git_prac]# git branch
+  branch1
+* branch2
+  dth
+  master
+  movies
+  recharge
+  train
+[root@ip-172-31-40-205 git_prac]#
+[root@ip-172-31-40-205 git_prac]# git checkout branch1
+A       .gitignore
+A       python
+Switched to branch 'branch1'
+[root@ip-172-31-40-205 git_prac]#
+[root@ip-172-31-40-205 git_prac]# ls
+branch1  index.html  java1  java2  java25  java3  java4  java5  movies1  movies2  movies3  movies4  movies5  pyhton2  python  python1
+[root@ip-172-31-40-205 git_prac]#
+[root@ip-172-31-40-205 git_prac]#
+[root@ip-172-31-40-205 git_prac]# touch branch2
+[root@ip-172-31-40-205 git_prac]#
+[root@ip-172-31-40-205 git_prac]# vi branch2
+[root@ip-172-31-40-205 git_prac]#
+[root@ip-172-31-40-205 git_prac]#
+[root@ip-172-31-40-205 git_prac]# git add branch2
+[root@ip-172-31-40-205 git_prac]#
+[root@ip-172-31-40-205 git_prac]# git commit -m "branch2" branch1
+On branch branch1
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .gitignore
+        branch2
+        python
+
+nothing added to commit but untracked files present (use "git add" to track)
+[root@ip-172-31-40-205 git_prac]#
+[root@ip-172-31-40-205 git_prac]#
+[root@ip-172-31-40-205 git_prac]#
+[root@ip-172-31-40-205 git_prac]# git add .
+[root@ip-172-31-40-205 git_prac]#
+[root@ip-172-31-40-205 git_prac]# git commit -m "branch2" branch1
+On branch branch1
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .gitignore
+        branch2
+        python
+
+nothing added to commit but untracked files present (use "git add" to track)
+[root@ip-172-31-40-205 git_prac]#
+[root@ip-172-31-40-205 git_prac]#
+[root@ip-172-31-40-205 git_prac]# git add branch2
+[root@ip-172-31-40-205 git_prac]#
+[root@ip-172-31-40-205 git_prac]# git status
+On branch branch1
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   .gitignore
+        new file:   branch2
+        new file:   python
+
+[root@ip-172-31-40-205 git_prac]#
+[root@ip-172-31-40-205 git_prac]#
+[root@ip-172-31-40-205 git_prac]# git commit -m "branch2" branch1
+On branch branch1
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .gitignore
+        branch2
+        python
+
+nothing added to commit but untracked files present (use "git add" to track)
+[root@ip-172-31-40-205 git_prac]#
+[root@ip-172-31-40-205 git_prac]#
+[root@ip-172-31-40-205 git_prac]#
+[root@ip-172-31-40-205 git_prac]# git branch
+* branch1
+  branch2
+  dth
+  master
+  movies
+  recharge
+  train
+[root@ip-172-31-40-205 git_prac]#
+[root@ip-172-31-40-205 git_prac]# git commit -m "branch2"
+[branch1 c125bd1] branch2
+ 3 files changed, 2 insertions(+)
+ create mode 100644 .gitignore
+ create mode 100644 branch2
+ create mode 100644 python
+[root@ip-172-31-40-205 git_prac]#
+[root@ip-172-31-40-205 git_prac]#
+[root@ip-172-31-40-205 git_prac]# git merge branch2
+Auto-merging branch2
+CONFLICT (add/add): Merge conflict in branch2
+Automatic merge failed; fix conflicts and then commit the result.
+[root@ip-172-31-40-205 git_prac]#
+[root@ip-172-31-40-205 git_prac]#
+[root@ip-172-31-40-205 git_prac]#
+[root@ip-172-31-40-205 git_prac]#
+[root@ip-172-31-40-205 git_prac]# #cherrypick
+[root@ip-172-31-40-205 git_prac]#
+[root@ip-172-31-40-205 git_prac]# git branch
+* branch1
+  branch2
+  dth
+  master
+  movies
+  recharge
+  train
+[root@ip-172-31-40-205 git_prac]#
+[root@ip-172-31-40-205 git_prac]#
+[root@ip-172-31-40-205 git_prac]#
+[root@ip-172-31-40-205 git_prac]# git checkout -b  ch1
+Switched to a new branch 'ch1'
+[root@ip-172-31-40-205 git_prac]#
+[root@ip-172-31-40-205 git_prac]# ls
+branch1  index.html  java2   java3  java5    movies2  movies4  pyhton2  python1
+branch2  java1       java25  java4  movies1  movies3  movies5  python
+[root@ip-172-31-40-205 git_prac]#
+[root@ip-172-31-40-205 git_prac]#
+[root@ip-172-31-40-205 git_prac]#
+[root@ip-172-31-40-205 git_prac]# touch php{1..3}
+[root@ip-172-31-40-205 git_prac]#
+[root@ip-172-31-40-205 git_prac]# touch html{1..5}
+[root@ip-172-31-40-205 git_prac]#
+[root@ip-172-31-40-205 git_prac]# git add php*
+[root@ip-172-31-40-205 git_prac]#
+[root@ip-172-31-40-205 git_prac]# git commit -m "php_files"
+U       branch2
+error: Committing is not possible because you have unmerged files.
+hint: Fix them up in the work tree, and then use 'git add/rm <file>'
+hint: as appropriate to mark resolution and make a commit.
+fatal: Exiting because of an unresolved conflict.
+[root@ip-172-31-40-205 git_prac]#
+[root@ip-172-31-40-205 git_prac]# git stash
+branch2: needs merge
+[root@ip-172-31-40-205 git_prac]# git commit -m "php_files"
+U       branch2
+error: Committing is not possible because you have unmerged files.
+hint: Fix them up in the work tree, and then use 'git add/rm <file>'
+hint: as appropriate to mark resolution and make a commit.
+fatal: Exiting because of an unresolved conflict.
+[root@ip-172-31-40-205 git_prac]#
+[root@ip-172-31-40-205 git_prac]# git sttaus
+git: 'sttaus' is not a git command. See 'git --help'.
+
+The most similar command is
+        status
+[root@ip-172-31-40-205 git_prac]# git status
+On branch ch1
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   php1
+        new file:   php2
+        new file:   php3
+
+Unmerged paths:
+  (use "git restore --staged <file>..." to unstage)
+  (use "git add <file>..." to mark resolution)
+        both added:      branch2
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        html1
+        html2
+        html3
+        html4
+        html5
+
+[root@ip-172-31-40-205 git_prac]#
+[root@ip-172-31-40-205 git_prac]#
+[root@ip-172-31-40-205 git_prac]# git .gitignore
+git: '.gitignore' is not a git command. See 'git --help'.
+[root@ip-172-31-40-205 git_prac]#
+[root@ip-172-31-40-205 git_prac]# vi .gitignore
+[root@ip-172-31-40-205 git_prac]#
+[root@ip-172-31-40-205 git_prac]# git commit -m "php_files"
+U       branch2
+error: Committing is not possible because you have unmerged files.
+hint: Fix them up in the work tree, and then use 'git add/rm <file>'
+hint: as appropriate to mark resolution and make a commit.
+fatal: Exiting because of an unresolved conflict.
+[root@ip-172-31-40-205 git_prac]#
+[root@ip-172-31-40-205 git_prac]# git status
+On branch ch1
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   php1
+        new file:   php2
+        new file:   php3
+
+Unmerged paths:
+  (use "git restore --staged <file>..." to unstage)
+  (use "git add <file>..." to mark resolution)
+        both added:      branch2
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   .gitignore
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        html1
+        html2
+        html3
+        html4
+        html5
+
+[root@ip-172-31-40-205 git_prac]#
+[root@ip-172-31-40-205 git_prac]# git restore --staged branch2
+[root@ip-172-31-40-205 git_prac]#
+[root@ip-172-31-40-205 git_prac]# git status
+On branch ch1
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   php1
+        new file:   php2
+        new file:   php3
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   .gitignore
+        modified:   branch2
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        html1
+        html2
+        html3
+        html4
+        html5
+
+[root@ip-172-31-40-205 git_prac]#
+[root@ip-172-31-40-205 git_prac]#
+[root@ip-172-31-40-205 git_prac]#
+[root@ip-172-31-40-205 git_prac]# git commit -m "php_files"
+[ch1 b223699] php_files
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 php1
+ create mode 100644 php2
+ create mode 100644 php3
+[root@ip-172-31-40-205 git_prac]#
+[root@ip-172-31-40-205 git_prac]#
+[root@ip-172-31-40-205 git_prac]#
+[root@ip-172-31-40-205 git_prac]#
+[root@ip-172-31-40-205 git_prac]# git status
+On branch ch1
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   .gitignore
+        modified:   branch2
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        html1
+        html2
+        html3
+        html4
+        html5
+
+no changes added to commit (use "git add" and/or "git commit -a")
+[root@ip-172-31-40-205 git_prac]#
+[root@ip-172-31-40-205 git_prac]#
+[root@ip-172-31-40-205 git_prac]#
+[root@ip-172-31-40-205 git_prac]#
+[root@ip-172-31-40-205 git_prac]# git add html*
+[root@ip-172-31-40-205 git_prac]#
+[root@ip-172-31-40-205 git_prac]#
+[root@ip-172-31-40-205 git_prac]# git commit -m "html files"
+[ch1 5afc6d3] html files
+ 5 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 html1
+ create mode 100644 html2
+ create mode 100644 html3
+ create mode 100644 html4
+ create mode 100644 html5
+[root@ip-172-31-40-205 git_prac]#
+[root@ip-172-31-40-205 git_prac]#
+[root@ip-172-31-40-205 git_prac]#
+[root@ip-172-31-40-205 git_prac]# git log --oneline
+5afc6d3 (HEAD -> ch1) html files
+b223699 php_files
+c125bd1 (branch1) branch2
+eac9748 file1
+96cb840 (origin/movies, movies) movies_files
+57066ca (origin/master) commit4
+e7ce50a python file
+9dcd03a java_file
+467f59b index.htm file
+[root@ip-172-31-40-205 git_prac]#
+[root@ip-172-31-40-205 git_prac]#
+[root@ip-172-31-40-205 git_prac]#
+[root@ip-172-31-40-205 git_prac]#
+[root@ip-172-31-40-205 git_prac]# git branch
+  branch1
+  branch2
+* ch1
+  dth
+  master
+  movies
+  recharge
+  train
+[root@ip-172-31-40-205 git_prac]#
+[root@ip-172-31-40-205 git_prac]#
+[root@ip-172-31-40-205 git_prac]# git checkout -b ch2
+Switched to a new branch 'ch2'
+[root@ip-172-31-40-205 git_prac]#
+[root@ip-172-31-40-205 git_prac]# ls
+branch1  html1  html3  html5       java1  java25  java4  movies1  movies3  movies5  php2  pyhton2  python1
+branch2  html2  html4  index.html  java2  java3   java5  movies2  movies4  php1     php3  python
+[root@ip-172-31-40-205 git_prac]#
+[root@ip-172-31-40-205 git_prac]#
+[root@ip-172-31-40-205 git_prac]# git checkout movies
+error: Your local changes to the following files would be overwritten by checkout:
+        .gitignore
+        branch2
+Please commit your changes or stash them before you switch branches.
+Aborting
+[root@ip-172-31-40-205 git_prac]#
+[root@ip-172-31-40-205 git_prac]#
+[root@ip-172-31-40-205 git_prac]# git stash
+Saved working directory and index state WIP on ch2: 5afc6d3 html files
+[root@ip-172-31-40-205 git_prac]#
+[root@ip-172-31-40-205 git_prac]#
+[root@ip-172-31-40-205 git_prac]# git checkout movies
+Switched to branch 'movies'
+Your branch is up to date with 'origin/movies'.
+[root@ip-172-31-40-205 git_prac]#
+[root@ip-172-31-40-205 git_prac]#
+[root@ip-172-31-40-205 git_prac]#
+[root@ip-172-31-40-205 git_prac]# ls
+index.html  java1  java2  java25  java3  java4  java5  movies1  movies2  movies3  movies4  movies5  pyhton2  python1
+[root@ip-172-31-40-205 git_prac]#
+[root@ip-172-31-40-205 git_prac]#
+[root@ip-172-31-40-205 git_prac]# git log --oneline
+96cb840 (HEAD -> movies, origin/movies) movies_files
+57066ca (origin/master) commit4
+e7ce50a python file
+9dcd03a java_file
+467f59b index.htm file
+[root@ip-172-31-40-205 git_prac]#
+[root@ip-172-31-40-205 git_prac]#
+[root@ip-172-31-40-205 git_prac]# git merge 9dcd03a
+Already up to date.
+[root@ip-172-31-40-205 git_prac]#
+[root@ip-172-31-40-205 git_prac]# ls
+index.html  java1  java2  java25  java3  java4  java5  movies1  movies2  movies3  movies4  movies5  pyhton2  python1
+[root@ip-172-31-40-205 git_prac]#
+[root@ip-172-31-40-205 git_prac]#
+[root@ip-172-31-40-205 git_prac]#
+[root@ip-172-31-40-205 git_prac]# git cherrypick b223699
+git: 'cherrypick' is not a git command. See 'git --help'.
+
+The most similar command is
+        cherry-pick
+[root@ip-172-31-40-205 git_prac]#
+[root@ip-172-31-40-205 git_prac]# ls
+index.html  java1  java2  java25  java3  java4  java5  movies1  movies2  movies3  movies4  movies5  pyhton2  python1
+[root@ip-172-31-40-205 git_prac]#
+[root@ip-172-31-40-205 git_prac]# git cherry-pick b223699
+[movies 6f31c08] php_files
+ Date: Mon Sep 16 15:57:51 2024 +0000
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 php1
+ create mode 100644 php2
+ create mode 100644 php3
+[root@ip-172-31-40-205 git_prac]#
+[root@ip-172-31-40-205 git_prac]#
+[root@ip-172-31-40-205 git_prac]#
+[root@ip-172-31-40-205 git_prac]# ls
+index.html  java1  java2  java25  java3  java4  java5  movies1  movies2  movies3  movies4  movies5  php1  php2  php3  pyhton2  python1
+[root@ip-172-31-40-205 git_prac]#
+[root@ip-172-31-40-205 git_prac]#
+[root@ip-172-31-40-205 git_prac]#
+[root@ip-172-31-40-205 git_prac]#
+[root@ip-172-31-40-205 git_prac]# git diff
+[root@ip-172-31-40-205 git_prac]#
+[root@ip-172-31-40-205 git_prac]#
+[root@ip-172-31-40-205 git_prac]# git diff php2
+[root@ip-172-31-40-205 git_prac]#
+[root@ip-172-31-40-205 git_prac]#
+[root@ip-172-31-40-205 git_prac]# git show php2
+commit 6f31c08f15caddb73b7e3aac7f6233aabcafb323 (HEAD -> movies)
+Author: jahnavi <jahnavimallela2626@gmail.com>
+Date:   Mon Sep 16 15:57:51 2024 +0000
+
+    php_files
+
+diff --git a/php2 b/php2
+new file mode 100644
+index 0000000..e69de29
+[root@ip-172-31-40-205 git_prac]#
+[root@ip-172-31-40-205 git_prac]#
+[root@ip-172-31-40-205 git_prac]#
+[root@ip-172-31-40-205 git_prac]#
+[root@ip-172-31-40-205 git_prac]#
+[root@ip-172-31-40-205 git_prac]# git log --stat
+commit 6f31c08f15caddb73b7e3aac7f6233aabcafb323 (HEAD -> movies)
+Author: jahnavi <jahnavimallela2626@gmail.com>
+Date:   Mon Sep 16 15:57:51 2024 +0000
+
+    php_files
+
+ php1 | 0
+ php2 | 0
+ php3 | 0
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+
+commit 96cb840bdba25a4e9869a3e78f505af7f299bc07 (origin/movies)
+Author: jahnavi <jahnavimallela2626@gmail.com>
+Date:   Sun Sep 15 10:18:44 2024 +0000
+
+    movies_files
+
+ movies1 | 0
+ movies2 | 0
+ movies3 | 0
+ movies4 | 0
+ movies5 | 0
+ 5 files changed, 0 insertions(+), 0 deletions(-)
+
+commit 57066ca44451d0ee9219319ff28207f84e11c051 (origin/master)
+Author: jahnavi <jahnavimallela2626@gmail.com>
+Date:   Sun Sep 15 10:04:23 2024 +0000
+
+    commit4
+
+ pyhton2 | 1 +
+ 1 file changed, 1 insertion(+)
+
+commit e7ce50ad47e8950641a8f95cb0759771d5339332
+Author: root <root@ip-172-31-40-205.eu-north-1.compute.internal>
+Date:   Sun Sep 15 09:46:58 2024 +0000
+
+    python file
+
+ python1 | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit 9dcd03abcd7846f8069420b9abc312f9d89e09c9
+Author: root <root@ip-172-31-40-205.eu-north-1.compute.internal>
+Date:   Sun Sep 15 09:46:01 2024 +0000
+
+    java_file
+
+ java1 | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit 467f59b87a44c46e3c8f6abe72893fc8057bc199
+Author: root <root@ip-172-31-40-205.eu-north-1.compute.internal>
+Date:   Sun Sep 15 09:44:39 2024 +0000
+
+    index.htm file
+
+ index.html | 23 +++++++++++++++++++++++
+ 1 file changed, 23 insertions(+)
+
+[3]+  Stopped                 git log --stat
+[root@ip-172-31-40-205 git_prac]#
